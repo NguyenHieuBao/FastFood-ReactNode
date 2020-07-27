@@ -1,0 +1,20 @@
+.products{
+	padding: 2% 2% 3% 2%;
+	text-align: center;
+	border: 1px solid rgba(196, 196, 196, 0.9);
+}
+.image{
+	width: 100%;
+}
+.image img{
+	height: 100%;
+}
+.price,.title{
+	margin-top: 2%;
+}
+.order{
+	margin-top: 4%;
+}
+.price{
+	font-weight: 600;
+}

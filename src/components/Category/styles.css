@@ -1,0 +1,15 @@
+.left, .right{
+	width: 32px;
+	border: 1px solid #000000;
+	height: 0;
+}
+.right{
+	width: 236px;
+}
+.mid{
+	margin: 0;
+	font-weight: 600;
+}
+.ul-hot-products li{
+	margin-right: 1%;
+}

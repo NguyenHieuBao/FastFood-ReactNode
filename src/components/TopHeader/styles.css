@@ -1,0 +1,44 @@
+.search{
+	width: 90%;
+	border: 1px solid rgba(196, 196, 196, 0.9);
+	border-radius: 5px;
+	padding-left: 15px;
+	font-family: none;
+	min-height: 30%;
+	height: 40px;
+}
+.logo-header, .search-header, .login-header{
+	width: 100%;
+}
+.logo-header img{
+	width: 26%;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 10%;
+}
+.search-header{
+	text-align: center;
+	position: relative;
+}
+.search-header i{
+	position: absolute;
+	top: 36%;
+	right: 13%;
+}
+.ul-top-header{
+	width: 100%;
+	margin: 0;
+}
+.ul-top-header li{
+	cursor: pointer;
+}
+.login-header li{
+	margin-right: 6%;
+}
+.line{
+    margin-top: 5px;
+	width: 85%;
+	border: 1px solid rgba(0, 0, 0, 0.35);
+	margin-left: auto;
+	margin-right: auto;
+}

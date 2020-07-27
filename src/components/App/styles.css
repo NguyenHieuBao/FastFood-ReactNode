@@ -1,0 +1,36 @@
+.fastfood{
+	width: 98%;
+	margin: 0 auto;
+	color: #000000;
+	font-family: none;
+	height: 1200px;
+	background-color: #FEFEFE;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+li a{
+	color: #000000;
+}
+li a:hover{
+	color: #ec0707;
+	text-decoration: none;
+}
+span{
+	font-family: initial;
+}
+img{
+	width: 100%;
+}
+.row{
+	margin-left: 0!important;
+	margin-right: 0!important;
+}
