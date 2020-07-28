@@ -7,16 +7,16 @@ class index extends Component {
         return (
             <div className="title-hot-products">
                 <ul className="ul-hot-products d-flex flex-wrap">
-                    <li className="d-flex align-items-center">
-                        <div className="left"></div>
+                    <li className="d-flex align-items-center width-line">
+                        <div className="left d-none d-md-block"></div>
                     </li>
                     <li className="d-flex align-items-center">
                         <h4 className="mid">
                             { title }
                         </h4>
                     </li>
-                    <li  className="d-flex align-items-center">
-                        <div className="right"></div>
+                    <li className="d-flex align-items-center width-line">
+                        <div className="right d-none d-md-block"></div>
                     </li>
                 </ul>
             </div>

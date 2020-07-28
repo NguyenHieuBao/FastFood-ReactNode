@@ -14,7 +14,7 @@ const options = {
 		0:{
 			items:1
 		},
-		576:{
+		601:{
 			items:2
 		},
 		766:{

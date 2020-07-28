@@ -1,0 +1,55 @@
+.mobile{
+	position: fixed;
+	width: 98%;
+    z-index: 999;
+    top: 0;
+    background-color: #ffffff;
+	min-height: 10%;
+}
+.mobile > div{
+	padding: 0;
+}
+.logo-header-mobile, .search-header-mobile{
+	width: 100%;
+}
+.logo-header-mobile img{
+	width: 82%;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 10%;
+}
+.search-mobile-top{
+	width: 100%
+}
+.search-header-mobile{
+	text-align: center;
+	position: relative;
+}
+.search-header-mobile i{
+	position: absolute;
+	top: 36%;
+	right: 13%;
+}
+.search-mobile{
+	width: 90%;
+	border: 1px solid rgba(196, 196, 196, 0.9);
+	border-radius: 5px;
+	padding-left: 15px;
+	font-family: none;
+	min-height: 30%;
+	height: 36px;
+}
+.menu-mobile{
+	font-size: 24px;
+	margin-right: 10%;
+	cursor: pointer;
+}
+.search-header-mobile i{
+	position: absolute;
+	top: 25%;
+	right: 7%;
+}
+.dropdown-menu{
+	position: absolute;
+	top: 0;
+}

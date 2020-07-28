@@ -1,11 +1,17 @@
+.top-header{
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	background-color: #ffffff;
+}
 .search{
-	width: 90%;
+	width: 98%;
 	border: 1px solid rgba(196, 196, 196, 0.9);
 	border-radius: 5px;
 	padding-left: 15px;
 	font-family: none;
 	min-height: 30%;
-	height: 40px;
+	height: 38px;
 }
 .logo-header, .search-header, .login-header{
 	width: 100%;
@@ -22,8 +28,9 @@
 }
 .search-header i{
 	position: absolute;
-	top: 36%;
-	right: 13%;
+	top: auto;
+	bottom: auto;
+	right: 5%;
 }
 .ul-top-header{
 	width: 100%;
@@ -34,6 +41,9 @@
 }
 .login-header li{
 	margin-right: 6%;
+}
+.cart{
+	font-size: 18px;
 }
 .line{
     margin-top: 5px;

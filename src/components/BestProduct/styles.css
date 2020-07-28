@@ -1,9 +1,6 @@
 .best-product > div{
     padding: 0;
 }
-.comic{
-    background-color: rgba(196, 196, 196, 0.12);
-}
 .image-best{
     padding: 2% 1%;
     text-align: center;
@@ -14,13 +11,13 @@
 .content-best{
     padding-top: 12%;
     padding-left: 5%;
-    font-size: 26px;
+    font-size: 22px;
 }
 @media only screen and (max-width: 767px) {
     .image-best img{
         width: 100%;
     }
     .content-best{
-        padding-top: 6%;
+        padding-top: 4%;
     }
 }

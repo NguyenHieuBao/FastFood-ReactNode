@@ -4,7 +4,7 @@ import './styles.css';
 class index extends Component {
     render() {
         return (
-            <div className="bottom-header">
+            <div className="bottom-header d-none d-md-block">
                 <ul className="ul-bottom-header d-flex justify-content-around">
                     <li>
                         <a href="#" title="Trang chủ">

@@ -2,6 +2,7 @@
 	padding: 2% 2% 3% 2%;
 	text-align: center;
 	border: 1px solid rgba(196, 196, 196, 0.9);
+	margin: 0 1px;
 }
 .image{
 	width: 100%;
@@ -11,10 +12,13 @@
 }
 .price,.title{
 	margin-top: 2%;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 300;
 }
 .order{
 	margin-top: 4%;
 }
 .price{
+	font-size: 16px;
 	font-weight: 600;
 }

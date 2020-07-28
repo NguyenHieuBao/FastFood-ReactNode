@@ -1,0 +1,46 @@
+.footer{
+    margin-top: 5%;
+    padding-bottom: 3%;
+}
+.top-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo-footer{
+    width: 85%;
+}
+.logo-footer > div{
+    padding: 0;
+}
+.left-footer,.right-footer{
+    width: 100%;
+	border: 1px solid #000000;
+    height: 0;
+}
+.mid-footer{
+    text-align: center;
+}
+.mid-footer img{
+    width: 72%;
+}
+.content-footer{
+    width: 100%;
+    margin-top: 3%;
+    font-size: 16px;
+}
+.content-footer h5{
+    font-weight: 600;
+}
+.facebook{
+    background-color: black;
+    color: white;
+}
+@media only screen and (max-width: 767px) {
+    .logo-footer{
+        width: 98%;
+    }
+    .mid-footer img{
+        width: 78%;
+    }
+}
