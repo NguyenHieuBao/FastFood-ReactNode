@@ -3,8 +3,12 @@
         margin-top: 14%;
     }
 }
-	
-@media only screen and (min-width: 551px) and (max-width: 767px) {
+@media only screen and (min-width: 551px) and (max-width: 622px) {
+    .banner{
+        margin-top: 12%;
+    }
+}
+@media only screen and (min-width: 623px) and (max-width: 767px) {
     .banner{
         margin-top: 11%;
     }

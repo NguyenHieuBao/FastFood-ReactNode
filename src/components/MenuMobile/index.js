@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 class index extends Component {
@@ -7,9 +8,9 @@ class index extends Component {
             <div className="mobile row d-md-none">
                 <div className="col-md-2 col-2 d-flex align-items-center">
                     <div className="logo-header-mobile">
-                        <a href="index.html" title="ILoveF">
+                        <Link to="/" title="ILoveF">
                             <img src="images/logo.png" alt="logo"/>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="col-md-9 col-9 d-flex align-items-center">
@@ -24,8 +25,8 @@ class index extends Component {
                     <div className="menu-mobile dropdown">
                         <i className="fa fa-list" data-toggle="dropdown"></i>
                         <div className="dropdown-menu">
-                            <a className="dropdown-item" href="#">Trang chủ</a>
-                            <a className="dropdown-item" href="#">Sản phẩm</a>
+                            <Link to="/" className="dropdown-item" title="Trang chủ">Trang chủ</Link>
+                            <Link to="/products" className="dropdown-item" title="Trang chủ">Sản phẩm</Link>
                             <a className="dropdown-item" href="#">Tin tức</a>
                             <a className="dropdown-item" href="#">Thông tin</a>
                             <a className="dropdown-item" href="#">Liên hệ</a>

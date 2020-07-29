@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Product from '../Product';
 import Carousel from '../Caurosel';
-import Category from '../Category';
+import Title from '../Title';
 import './styles.css';
 
 class index extends Component {
     render() {
         return (
             <div className="hot-products">
-                <Category title="Sản phẩm nổi bật"/>
+                <Title title="Sản phẩm nổi bật"/>
                 <div className="content-hot-products">  
                     <Carousel>
                         <Product/>

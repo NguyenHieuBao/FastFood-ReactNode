@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 class index extends Component {
@@ -12,9 +13,9 @@ class index extends Component {
                         </div>
                         <div className="col-md-2 col-4">
                             <div className="mid-footer">
-                                <a href="index.html" alt="ILoveF">
+                                <Link to="/" title="ILoveF">
                                     <img src="images/logo.png" alt="logo"/>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-md-5 col-4 d-flex align-items-center">

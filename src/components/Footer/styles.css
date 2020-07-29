@@ -32,10 +32,6 @@
 .content-footer h5{
     font-weight: 600;
 }
-.facebook{
-    background-color: black;
-    color: white;
-}
 @media only screen and (max-width: 767px) {
     .logo-footer{
         width: 98%;

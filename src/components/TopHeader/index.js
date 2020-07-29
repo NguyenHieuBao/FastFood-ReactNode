@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 class index extends Component {
@@ -7,9 +8,9 @@ class index extends Component {
             <div className="top-header d-none d-md-block">
                 <div className="d-flex justify-content-around">
                     <div className="logo-header">
-                        <a href="index.html" title="ILoveF">
+                        <Link to="/" title="ILoveF">
                             <img src='images/logo.png' alt="logo"/>
-                        </a>
+                        </Link>
                     </div>
                     <div className="search-header d-flex align-items-center">
                         <input type="text" className="search" name="searchName" placeholder="Nhập tên sản phẩm"/>

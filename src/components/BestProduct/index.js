@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Category from '../Category';
+import Title from '../Title';
 import './styles.css';
 
 class index extends Component {
     render() {
         return (
             <React.Fragment>
-                <Category title="Sản phẩm của tuần"/>
+                <Title title="Sản phẩm của tuần"/>
                 <div className="row best-product">
                     <div className="col-md-6 col-12">
                         <div className="content-best">

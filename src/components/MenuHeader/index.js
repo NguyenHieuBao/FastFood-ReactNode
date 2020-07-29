@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 class index extends Component {
@@ -7,14 +8,14 @@ class index extends Component {
             <div className="bottom-header d-none d-md-block">
                 <ul className="ul-bottom-header d-flex justify-content-around">
                     <li>
-                        <a href="#" title="Trang chủ">
+                        <Link to="/" title="Trang chủ">
                             Trang chủ
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" title="Sản phẩm">
+                        <Link to="/products" title="Sản phẩm">
                             Sản phẩm
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a href="#" title="Tin tức">

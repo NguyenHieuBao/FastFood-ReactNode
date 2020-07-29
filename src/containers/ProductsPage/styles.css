@@ -1,0 +1,14 @@
+.container-products{
+	margin-top: 4%;
+}
+.content-products > div{
+	padding: 0;
+}
+@media only screen and (max-width: 768px) {
+    .container-products{
+        margin-top: 15%;
+	}
+	.mid-container-products > div{
+		padding: 4px;
+	}
+}
