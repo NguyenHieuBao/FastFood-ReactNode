@@ -3,18 +3,19 @@ import './styles.css';
 
 class index extends Component {
     render() {
+        const { product } = this.props;
         return (
             <div className="products">
                 <div className="image">
-                    <img src="images/4.jpg" alt="products"/>
+                    <img src={`images/${product ? product.Image : ''}`} alt="products"/>
                 </div>
                 <div className="title">
                     <h5>
-                        Hot dog khá ngon
+                        {product.Name}
                     </h5>
                 </div>
                 <div className="price">
-                    100.000 đ
+                    {product.Price.toLocaleString()} đ
                 </div>
                 <div className="order">
                     <button type="button" className="btn btn-success">

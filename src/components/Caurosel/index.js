@@ -6,7 +6,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const options = {
     loop:true,
-	nav:true,
+	nav:true,lazyLoad:true,
 	//autoplay:true,
 	//autoplayTimeout:4000,
 	autoplayHoverPause:true,
@@ -30,7 +30,7 @@ const options = {
 };
 class index extends Component {
 	render() {
-        const { children, ...props } = this.props;
+		const { children, ...props } = this.props;
 		return (
 			<ReactOwlCarousel {...props}  {...options}>
 				{children}

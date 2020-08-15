@@ -1,6 +1,9 @@
 .search-price{
 	margin-top: 6px;
 }
+.button-filter{
+	margin-top: 5%;
+}
 .search-left,.search-right{
 	width: 36%;
 	height: 45px;
@@ -15,4 +18,7 @@
 	margin: 5% 0;
 	text-align: left;
 	height: 0;
+}
+.item-prices{
+	color: #595959;
 }

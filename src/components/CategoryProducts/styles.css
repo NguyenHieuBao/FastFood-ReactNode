@@ -1,0 +1,16 @@
+.line-products{
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.35);
+	margin: 6% 0;
+}
+.item-products{
+    color: #595959;
+    cursor: pointer;
+}
+.item-products:hover{
+    color: #212529;
+}
+.active-category{
+	color: #212529;
+	font-size: 18px;
+}

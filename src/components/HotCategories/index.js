@@ -1,22 +1,17 @@
 import React, { Component } from 'react';
-import Product from '../Product';
 import Carousel from '../Caurosel';
 import Title from '../Title';
 import './styles.css';
 
 class index extends Component {
     render() {
+        const { children, message } = this.props;
         return (
             <div className="hot-products">
-                <Title title="Sản phẩm nổi bật"/>
+                <Title title={message}/>
                 <div className="content-hot-products">  
-                    <Carousel>
-                        <Product/>
-                        <Product/>
-                        <Product/>
-                        <Product/>
-                        <Product/>
-                        <Product/>
+                    <Carousel key={`${children.length}`}>
+                        { children }
 					</Carousel>
                 </div>
             </div>
