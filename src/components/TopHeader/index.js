@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import SearchAll from '../SearchAll';
 import './styles.css';
 
 class index extends Component {
@@ -12,10 +13,7 @@ class index extends Component {
                             <img src='images/logo.png' alt="logo"/>
                         </Link>
                     </div>
-                    <div className="search-header d-flex align-items-center">
-                        <input type="text" className="search" name="searchName" placeholder="Nhập tên sản phẩm"/>
-                        <i className="fa fa-search"></i>
-                    </div>
+                    <SearchAll/>
                     <div className="login-header d-flex align-items-center">
                         <ul className="ul-top-header d-flex justify-content-end">
                             <li>

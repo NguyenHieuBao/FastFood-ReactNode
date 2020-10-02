@@ -4,8 +4,16 @@ import {
         fetchListProducts, 
         fetchListProductsSuccess, 
         fetchListProductsFailed,
-        fetchListHotProductsSuccess
+        fetchListHotProductsSuccess,
+        searchAllSuccess
 } from '../actions/products';
+
+const removeEmpty = data => {
+    Object.keys(data).forEach(
+      k => !data[k] && data[k] !== undefined && delete data[k]
+    );
+    return data;
+  };
 
 export const getListProducts = function* getListProducts({payload}){
     try{
@@ -23,16 +31,21 @@ export const getListProductsForPagination = function* getListProductsForPaginati
     const min = yield select(state => state.products.min);
     const max = yield select(state => state.products.max);
     const sortPrices = yield select(state => state.products.sortPrices);
+    const keyword = yield select(state => state.products.keywordSearchAll);
     let categories = yield select(state => state.products.categories);
     categories = categories==="Tất cả" ? null : categories;
     
-    yield put(fetchListProducts({
+    let filter = {
         categories,
         sortPrices,
         page,
         max,
-        min
-    }));
+        min,
+        keyword
+    }
+    filter = removeEmpty(filter);
+    console.log(filter)
+    yield put(fetchListProducts(filter));
 }
 export const getListHotProducts = function* getListHotProducts(){
     try{
@@ -40,6 +53,15 @@ export const getListHotProducts = function* getListHotProducts(){
         const { data } = resp;
         yield put(fetchListHotProductsSuccess(data));
     }catch(errors){
-        yield put(fetchListProductsFailed);
+        yield put(fetchListProductsFailed(errors));
+    }
+}
+export const getListNameProductsFromSearch = function* getListNameProductsFromSearch(){
+    try{
+        const resp = yield call(productsApi.getProductsFromSearchAll);
+        const { data } = resp;
+        yield put(searchAllSuccess(data));
+    }catch(errors){
+        yield put(fetchListProductsFailed(errors));
     }
 }

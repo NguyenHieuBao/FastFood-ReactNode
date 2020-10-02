@@ -11,7 +11,8 @@ function* rootSaga(){
     //products
     yield takeLatest(productsConstant.FETCH_LIST_PRODUCTS, productsSaga.getListProducts);
     yield takeLatest(productsConstant.FETCH_LIST_PRODUCTS_FOR_PAGINATION, productsSaga.getListProductsForPagination);
-    yield takeLatest(productsConstant.FETCH_LIST_HOT_PRODUCTS, productsSaga.getListHotProducts)
+    yield takeLatest(productsConstant.FETCH_LIST_HOT_PRODUCTS, productsSaga.getListHotProducts);
+    yield takeLatest(productsConstant.GET_LIST_NAME_SEARCH_ALL, productsSaga.getListNameProductsFromSearch);
 
     //categories
     yield takeLatest(categoriesConstant.FETCH_LIST_CATEGORY_PRODUCTS, categoriesSaga.getListCategories);

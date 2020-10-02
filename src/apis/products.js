@@ -12,3 +12,6 @@ export const getProducts = (params = {}) => {
 export const getHotProducts = () => {
     return axiosService.get(`${indexConstant.URL_HOT_PRODUCTS}`);
 }
+export const getProductsFromSearchAll = () => {
+    return axiosService.get(`${indexConstant.URL_SEARCH_ALL}`);
+}

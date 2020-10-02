@@ -8,7 +8,9 @@ const initialState = {
     min : null,
     max : null,
     sortPrices : null,
-    categories : null
+    categories : null,
+    searchAll : [],
+    keywordSearchAll : null
 };
 
 const reducer = (state=initialState, action) => {
@@ -49,6 +51,18 @@ const reducer = (state=initialState, action) => {
             return {
                 ...state,
                 sortPrices : action.payload.sortPrices
+            }
+        }
+        case productsConstant.SEARCH_ALL_SUCCESS : {
+            return {
+                ...state,
+                searchAll : action.payload.data
+            }
+        }
+        case productsConstant.SEARCH_ALL : {
+            return {
+                ...state,
+                keywordSearchAll : action.payload.keyword
             }
         }
         default : return state;

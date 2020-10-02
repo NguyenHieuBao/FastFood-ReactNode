@@ -1,6 +1,7 @@
 import React from 'react';
 import HomePage from './containers/HomePage';
 import ProductsPage from './containers/ProductsPage';
+import DetailsPage from './containers/DetailsPage';
 
 const ROUTES = [
     {
@@ -14,6 +15,12 @@ const ROUTES = [
         path : '/products',
         exact : true,
         main : () => <ProductsPage/>
+    },
+    {
+        name : "DetailsPage",
+        path : '/details',
+        exact : true,
+        main : () => <DetailsPage/>
     },
 ]
 

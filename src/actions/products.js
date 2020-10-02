@@ -57,6 +57,27 @@ export const sortPrices = sortPrices => {
         }
     }
 }
+export const searchAll = () => {
+    return {
+        type : productsConstant.GET_LIST_NAME_SEARCH_ALL
+    }
+}
+export const searchAllSuccess = data => {
+    return {
+        type : productsConstant.SEARCH_ALL_SUCCESS,
+        payload : {
+            data
+        }
+    }
+}
+export const getKeywordForSearchAll = keyword => {
+    return {
+        type : productsConstant.SEARCH_ALL,
+        payload : {
+            keyword
+        }
+    }
+}
 export const fetchListHotProducts = () => {
     return {
         type : productsConstant.FETCH_LIST_HOT_PRODUCTS

@@ -1,0 +1,35 @@
+.search-header{
+	text-align: center;
+	position: relative;
+}
+.search-header i{
+	position: absolute;
+	top: auto;
+	bottom: auto;
+	right: 5%;
+}
+.search{
+	width: 98%;
+	border: 1px solid rgba(196, 196, 196, 0.9);
+	border-radius: 5px;
+	padding-left: 10px;
+	font-family: none;
+	min-height: 30%;
+	height: 38px;
+}
+.list-suggestions{
+	position: absolute;
+	top: 74%;
+	text-align: left;
+	z-index: 999;
+	width: 98%;
+	background-color: #ffffff;
+	border: 1px solid rgba(196, 196, 196, 0.9);
+}
+.list-suggestions li{
+	padding: 3px 0 3px 10px;
+	cursor: pointer;
+}
+.list-suggestions li:hover{
+	background-color: rgba(196, 196, 196, 0.9);
+}
